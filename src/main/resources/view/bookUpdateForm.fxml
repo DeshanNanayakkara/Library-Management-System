@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="420.0" prefWidth="680.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.BookUpdateFormController">
+   <children>
+      <ComboBox fx:id="cmbChooseBook" layoutX="30.0" layoutY="30.0" onAction="#cmbChooseBookOnAction" prefHeight="30.0" prefWidth="620.0" promptText="Select Book you want to Update.." style="-fx-background-color: DFEFE5;" />
+      <Label layoutX="30.0" layoutY="70.0" text="Author :  ">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="153.0" text="Genre :   ">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="295.0" text="Status :  ">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="243.0" style="-fx-background-color: #34495e;" text="ISBN(International Standard Book Number) :  " textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="279.0" layoutY="295.0" text="Publication Date :  ">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAuthor" layoutX="30.0" layoutY="105.0" prefHeight="40.0" prefWidth="620.0" style="-fx-background-color: DFEFE5;" styleClass="addnewbooktextfields" stylesheets="@../styles.css">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtGenre" layoutX="30.0" layoutY="185.0" prefHeight="40.0" prefWidth="620.0" style="-fx-background-color: DFEFE5;" styleClass="addnewbooktextfields" stylesheets="@../styles.css">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label fx:id="lblIsbn" layoutX="499.0" layoutY="242.0" prefHeight="34.0" prefWidth="175.0" text="ISBN" textFill="RED">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font></Label>
+      <DatePicker fx:id="datePicker" layoutX="458.0" layoutY="286.0" style="-fx-background-color: DFEFE5;" styleClass="addnewbooktextfields" stylesheets="@../styles.css" />
+      <ComboBox fx:id="cmbStatus" layoutX="94.0" layoutY="294.0" prefWidth="150.0" style="-fx-background-color: DFEFE5;" styleClass="comboBox" stylesheets="@../styles.css" />
+      <Button layoutX="30.0" layoutY="360.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefWidth="160.0" style="-fx-background-color: DFEFE5;" styleClass="btn69" stylesheets="@../styles.css" text="Update">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="490.0" layoutY="358.0" mnemonicParsing="false" onAction="#btnCancelOnAction" prefWidth="160.0" style="-fx-background-color: DFEFE5;" styleClass="btn69" stylesheets="@../styles.css" text="Cancel">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="260.0" layoutY="358.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefWidth="160.0" style="-fx-background-color: DFEFE5;" styleClass="btn69" stylesheets="@../styles.css" text="Delete">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

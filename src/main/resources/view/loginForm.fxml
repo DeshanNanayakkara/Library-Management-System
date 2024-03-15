@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loginPageContext" prefHeight="840.0" prefWidth="1540.0" style="-fx-background-color: F1FFF6;" stylesheets="@../styles.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.LoginPageController">
+
+   <children>
+      <ImageView fitHeight="840.0" fitWidth="1540.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/login-background.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="270.0" layoutY="70.0" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: DFEFE5;">
+         <children>
+            <Hyperlink fx:id="hyperlinkDontHaveAccount1" layoutX="103.0" layoutY="530.0" onAction="#hyperlinkSignInOnAction" prefHeight="40.0" prefWidth="214.0" text="Don't have account?">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Hyperlink>
+            <Label layoutX="84.0" layoutY="208.0" prefHeight="40.0" prefWidth="130.0" text="username" textFill="WHITE">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="84.0" layoutY="287.0" prefHeight="40.0" prefWidth="140.0" text="password" textFill="WHITE">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtUsername1" layoutX="232.0" layoutY="213.0" prefHeight="31.0" prefWidth="229.0" />
+            <TextField fx:id="txtPassword1" layoutX="232.0" layoutY="292.0" onAction="#txtPasswordOnAction" prefHeight="31.0" prefWidth="229.0" />
+            <Button layoutX="192.0" layoutY="380.0" mnemonicParsing="false" onAction="#btnLoginOnAction" prefHeight="31.0" prefWidth="154.0" styleClass="loginbtn" stylesheets="@../styles.css" text="Login">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="400.0" fitWidth="400.0" layoutX="580.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/frame%20bookshelf.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="739.0" layoutY="462.0" prefHeight="40.0" prefWidth="188.0" text="BOOKWORM" textFill="WHITE">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDateAndTime" layoutX="580.0" layoutY="618.0" prefHeight="55.0" prefWidth="349.0" textFill="#000f18">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="270.0" layoutY="70.0" prefHeight="700.0" prefWidth="500.0" style="-fx-background-color: ffffffff;">
+         <children>
+            <Hyperlink fx:id="hyperlinkDontHaveAccount" layoutX="57.0" layoutY="605.0" onAction="#hyperlinkSignInOnAction" prefHeight="40.0" prefWidth="214.0" text="Don't have account?">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Hyperlink>
+            <Label layoutX="50.0" layoutY="290.0" prefHeight="40.0" prefWidth="130.0" text="username">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="395.0" prefHeight="40.0" prefWidth="140.0" text="password">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtUsername" layoutX="50.0" layoutY="341.0" prefHeight="31.0" prefWidth="400.0" style="-fx-background-color: DFEFE5; -fx-border-color: DFEFE5;" />
+            <TextField fx:id="txtPassword" layoutX="50.0" layoutY="444.0" onAction="#txtPasswordOnAction" prefHeight="31.0" prefWidth="400.0" style="-fx-background-color: DFEFE5; -fx-border-color: DFEFE5;" />
+            <Button layoutX="118.0" layoutY="524.0" mnemonicParsing="false" onAction="#btnLoginOnAction" prefHeight="51.0" prefWidth="266.0" style="-fx-background-color: #35735d;" styleClass="loginbtn" stylesheets="@../styles.css" text="Login" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Label layoutX="93.0" layoutY="184.0" prefHeight="40.0" prefWidth="330.0" text="Welcome to BOOKWORM">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="64.0" layoutY="68.0" prefHeight="40.0" prefWidth="140.0" text="Addmin">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="186.0" layoutY="68.0" prefHeight="40.0" prefWidth="140.0" text="User">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

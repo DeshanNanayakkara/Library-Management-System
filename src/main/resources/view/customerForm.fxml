@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1200.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.CustomerFormController">
+   <children>
+      <TableView fx:id="tblCustomer" layoutX="100.0" layoutY="230.0" opacity="0.83" prefHeight="318.0" prefWidth="1000.0" style="-fx-background-color: DFEFE5;" stylesheets="@../styles.css">
+        <columns>
+          <TableColumn fx:id="colCustomerNo" prefWidth="100.00003051757812" text="Customer no" />
+          <TableColumn fx:id="colName" minWidth="0.0" prefWidth="205.0" text="Name" />
+            <TableColumn fx:id="colAge" minWidth="0.0" prefWidth="162.0" text="Age" />
+            <TableColumn fx:id="colCity" minWidth="0.0" prefWidth="174.0" text="City" />
+            <TableColumn fx:id="colEmail" minWidth="0.0" prefWidth="320.0" text="e-mail" />
+        </columns>
+         <styleClass>
+            <String fx:value="table-cell" />
+            <String fx:value="table-row-cell" />
+            <String fx:value="table-row-cell-selected" />
+         </styleClass>
+      </TableView>
+      <Button layoutX="100.0" layoutY="73.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="30.0" prefWidth="1000.0" style="-fx-background-color: DFEFE5;" styleClass="updatebtn" stylesheets="@../styles.css" text="update">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="100.0" layoutY="150.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="31.0" prefWidth="1000.0" style="-fx-background-color: DFEFE5;" styleClass="deletebtn" stylesheets="@../styles.css" text="delete">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>

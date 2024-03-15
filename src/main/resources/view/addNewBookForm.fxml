@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="449.0" prefWidth="658.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.AddNewBookFormController">
+   <children>
+      <Label layoutX="30.0" layoutY="18.0" text="Book Title:  ">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtBookTitle" layoutX="30.0" layoutY="53.0" prefHeight="40.0" prefWidth="280.0" style="-fx-background-color: DFEFE5;" styleClass="addnewbooktextfields" stylesheets="@../styles.css">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="31.0" layoutY="98.0" text="Author :  ">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtAuthor" layoutX="30.0" layoutY="131.0" prefHeight="40.0" prefWidth="280.0" style="-fx-background-color: DFEFE5;" styleClass="addnewbooktextfields" stylesheets="@../styles.css">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="30.0" layoutY="190.0" text="Genre :   ">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbGenre" layoutX="98.0" layoutY="190.0" prefHeight="31.0" prefWidth="210.0" />
+      <Label layoutX="321.0" layoutY="190.0" text="Quantity :">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="241.0" style="-fx-background-color: #34495e;" text="ISBN(International Standard Book Number) :  " textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtIsbn" layoutX="427.0" layoutY="234.0" prefHeight="40.0" prefWidth="201.0" style="-fx-background-color: DFEFE5;" styleClass="addnewbooktextfields" stylesheets="@../styles.css">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="29.0" layoutY="296.0" text="Publication Date :  ">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="datePicker" layoutX="186.0" layoutY="291.0" prefHeight="40.0" prefWidth="210.0" style="-fx-background-color: DFEFE5;" styleClass="addnewbooktextfields" stylesheets="@../styles.css" />
+      <Button layoutX="133.0" layoutY="355.0" mnemonicParsing="false" onAction="#btnAddOnAction" prefWidth="200.0" style="-fx-background-color: DFEFE5;" text="Add">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="376.0" layoutY="355.0" mnemonicParsing="false" onAction="#btnCancelOnAction" prefWidth="200.0" style="-fx-background-color: DFEFE5;" text="Cancel">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="30.0" layoutY="398.0" prefHeight="21.0" prefWidth="154.0" text="*All fields are required" textFill="RED" />
+      <ComboBox fx:id="cmbQty" layoutX="429.0" layoutY="190.0" prefHeight="30.0" prefWidth="199.0" style="-fx-background-color: DFEFE5;" styleClass="comboBox" stylesheets="@../styles.css" />
+      <Button layoutX="421.0" layoutY="88.0" mnemonicParsing="false" onAction="#btnChooseImageOnAction" style="-fx-background-color: lack;" styleClass="imagechoosbtn" stylesheets="@../styles.css" text="Select book cover" textFill="#bad79f">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="lblPath" layoutX="514.0" layoutY="302.0" text="Label" />
+   </children>
+</AnchorPane>

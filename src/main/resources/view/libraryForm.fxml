@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1200.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.libraryFormController">
+    <children>
+        <Button layoutX="100.0" layoutY="50.0" mnemonicParsing="false" onAction="#btnNewOnAction" prefHeight="30.0" prefWidth="1000.0" style="-fx-background-color: DFEFE5;" text="+New" />
+        <TableView fx:id="tblBooks" layoutX="100.0" layoutY="200.0" opacity="0.71" prefHeight="350.0" prefWidth="1000.0">
+            <columns>
+                <TableColumn fx:id="colTitle" prefWidth="167.0" text="Title" />
+            <TableColumn fx:id="colAuthor" prefWidth="159.0" text="Author" />
+            <TableColumn fx:id="colGenre" prefWidth="145.0" text="Genre" />
+            <TableColumn fx:id="colIsbn" prefWidth="139.0" text="ISBN" />
+            <TableColumn fx:id="colPublicDate" prefWidth="150.0" text="Publication Date" />
+            <TableColumn fx:id="colQty" prefWidth="135.0" text="Quantity" />
+            </columns>
+        </TableView>
+      <Button layoutX="100.0" layoutY="100.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="30.0" prefWidth="1000.0" style="-fx-background-color: DFEFE5;" text="update" />
+      <Button layoutX="100.0" layoutY="150.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="30.0" prefWidth="1000.0" style="-fx-background-color: DFEFE5;" text="delete" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="840.0" prefWidth="1540.0" style="-fx-background-color: black;" stylesheets="@../styles.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.AdminDashboardFormController">
+   <children>
+      <ImageView fitHeight="840.0" fitWidth="1540.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/Frame%2038.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblDateAndTime" layoutX="1000.0" layoutY="94.0" prefHeight="55.0" prefWidth="353.0" text="Date &amp; time">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnCustomerOnAction" layoutX="400.0" layoutY="94.0" mnemonicParsing="false" onAction="#btnCustomerOnAction" onMouseClicked="#btnCustomerClicked" onMouseReleased="#btnCustomerReleased" prefHeight="55.0" prefWidth="165.0" style="-fx-background-color: ffffffff00;" styleClass="dashboardbtn" stylesheets="@../styles.css" text="Customer">
+         <font>
+            <Font name="Sitka Text" size="26.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <AnchorPane fx:id="contentContext" layoutX="170.0" layoutY="171.0" prefHeight="600.0" prefWidth="1200.0" />
+      <Button fx:id="btnHomeOnAction" layoutX="200.0" layoutY="94.0" mnemonicParsing="false" onAction="#btnHomeOnAction" onMouseClicked="#btnCustomerClicked" onMouseReleased="#btnCustomerReleased" prefHeight="55.0" prefWidth="165.0" style="-fx-background-color: ffffffff00;" styleClass="dashboardbtn" stylesheets="@../styles.css" text="Home">
+         <font>
+            <Font name="Sitka Text" size="26.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="600.0" layoutY="94.0" mnemonicParsing="false" onAction="#btnLibraryOnAction" onMouseClicked="#btnCustomerClicked" onMouseReleased="#btnCustomerReleased" prefHeight="55.0" prefWidth="165.0" style="-fx-background-color: ffffffff00;" styleClass="dashboardbtn" stylesheets="@../styles.css" text="Library">
+         <font>
+            <Font name="Sitka Text" size="26.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="800.0" layoutY="94.0" mnemonicParsing="false" onAction="#btnBranchesOnAction" onMouseClicked="#btnCustomerClicked" onMouseReleased="#btnCustomerReleased" prefHeight="55.0" prefWidth="165.0" style="-fx-background-color: ffffffff00;" styleClass="dashboardbtn" stylesheets="@../styles.css" text="Branches">
+         <font>
+            <Font name="Sitka Text" size="26.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
